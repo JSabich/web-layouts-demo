@@ -1,0 +1,99 @@
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#f4f7f6;
+text-align:center;
+}
+
+.back{
+display:inline-block;
+margin:20px;
+text-decoration:none;
+color:#333;
+}
+
+.hero{
+background:url("../img/hero.jpg") center/cover no-repeat;
+color:white;
+padding:120px 20px;
+position:relative;
+}
+
+.hero::after{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(31,122,58,0.7);
+}
+
+.hero h1,
+.hero p,
+.hero .btn{
+position:relative;
+z-index:2;
+}
+    
+
+.hero h1{
+margin:0;
+font-size:40px;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#f2c94c;
+color:black;
+text-decoration:none;
+border-radius:6px;
+}
+
+.products{
+padding:60px 20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+max-width:900px;
+margin:auto;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:8px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card img{
+width:100%;
+border-radius:6px;
+}
+
+.export{
+padding:60px 20px;
+background:white;
+}
+
+.export img{
+width:300px;
+margin-top:20px;
+border-radius:6px;
+}
+
+.contact{
+padding:60px 20px;
+background:#e9f5ee;
+}
+
+footer{
+padding:30px;
+font-size:14px;
+color:#666;
+}
